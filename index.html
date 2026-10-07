@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos Finais • Web Design Vocação 2026-2</title>
+  <meta name="description" content="Projetos finais dos jovens do curso de Web Design da Vocação.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <nav class="nav container">
+    <div class="brand"><span class="brand-mark">V</span><span>Vocação <b>Web Design</b></span></div>
+    <a href="#projetos" class="nav-link">Ver projetos ↓</a>
+  </nav>
+  <div class="hero-content container">
+    <p class="eyebrow">TRABALHO EM AÇÃO • 2026-2</p>
+    <h1>Projetos finais<br><span>que merecem ser vistos.</span></h1>
+    <p class="lead">Uma vitrine simples dos projetos desenvolvidos pelos jovens do curso de Web Design.</p>
+    <div class="hero-stats">
+      <div><strong id="topCount">11</strong><span>em destaque</span></div>
+      <div><strong id="allCount">0</strong><span>jovens / registros</span></div>
+      <div><strong>HTML · CSS · JS</strong><span>tecnologias</span></div>
+    </div>
+  </div>
+</header>
+
+<main id="projetos" class="container">
+  <section class="section">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">01 • DESTAQUES</p>
+        <h2>Top 11</h2>
+      </div>
+      <p>Os onze projetos selecionados para destaque, com o motivo que chamou atenção em cada trabalho.</p>
+    </div>
+    <div id="topGrid" class="grid top-grid"></div>
+  </section>
+
+  <section class="section other-section">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">02 • GALERIA</p>
+        <h2>Projetos e equipes</h2>
+      </div>
+      <div class="controls">
+        <input id="search" type="search" placeholder="Buscar jovem ou projeto..." aria-label="Buscar">
+        <select id="classFilter" aria-label="Filtrar turma">
+          <option value="">Todas as turmas</option>
+          <option value="Turma A - Tarde">Turma A - Tarde</option>
+          <option value="Turma B - Manhã">Turma B - Manhã</option>
+          <option value="Turma B - Tarde">Turma B - Tarde</option>
+        </select>
+      </div>
+    </div>
+    <div class="group-note"><strong>👥 Como os grupos foram definidos:</strong> quando o mesmo link executável aparece associado a vários jovens na tabela, considerei que o trabalho foi desenvolvido por aquela equipe. Os links abaixo são clicáveis.</div><div id="otherGrid" class="grid"></div>
+    <p id="empty" class="empty" hidden>Nenhum projeto encontrado.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <span>Vocação • Web Design • 2026-2</span>
+    <span>Feito para apresentar o trabalho dos jovens.</span>
+  </div>
+</footer>
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
